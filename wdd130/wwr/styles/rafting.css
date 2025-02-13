@@ -75,6 +75,43 @@ nav ul {
   text-decoration: wavy;
 }
 
+.index-welcome{
+  position: relative;
+  text-align: center;
+  background-color: var(--accent-color-2);
+}
+
+.index-words {
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  background-color: var(--accent-color-1);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 529px;
+  height: 333px;
+  font-size: 5rem;
+}
+
+.index-welcome-img{
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+  
+}
+
+.address{
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 600px;
+  height: 300px;
+ margin-top: 250px;
+}
 .history {
   display: grid;
   width: auto;
@@ -89,6 +126,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-items: center;
+
 }
 
 .hero {
@@ -228,16 +266,6 @@ footer p {
   text-align: left;
 }
 
-.address{
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  width: 600px;
-  height: 300px;
- margin-top: 250px;
-}
 .headquarters{
   border-bottom: var(--primary-color) 1px  solid;
   padding-bottom: 10px;
@@ -324,4 +352,18 @@ figcaption{
 }
 .subscribe {
   font-size: smaller;
+}
+.trip-link{
+  text-align: center;
+  margin: 10px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--accent-color-2);
+}
+.trip-link :hover{
+  filter: brightness(90%);
+}
+.trip-link-img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
 }
