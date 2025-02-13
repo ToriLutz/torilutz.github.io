@@ -367,7 +367,25 @@ figcaption{
   height: auto;
   margin-bottom: 10px;
 }
-.grouping{
+.index-imgs{
+  width: 300px; 
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--accent-color-2);
   display: grid;
-  grid-template-rows: auto;
+}
+
+.index-imgs :hover{
+  filter: brightness(90%);
+}
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: last baseline;
+  margin: 1rem;
+  padding: 1rem;
+  border: var(--primary-color) 1px solid;
 }
