@@ -367,3 +367,7 @@ figcaption{
   height: auto;
   margin-bottom: 10px;
 }
+.grouping{
+  display: grid;
+  grid-template-rows: auto;
+}
