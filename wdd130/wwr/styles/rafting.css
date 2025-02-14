@@ -384,7 +384,6 @@ figcaption{
   flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: last baseline;
   margin: 1rem;
   padding: 1rem;
   border: var(--primary-color) 1px solid;
@@ -421,8 +420,7 @@ figcaption{
   padding: 10px;
   display: flex;
   flex-direction: row;
-  width: 939px;
-  height: 244px;
+  width: 60%;
   border-radius: 5%;
 }
 
@@ -432,16 +430,15 @@ figcaption{
   margin: 20px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
-  width: 939px;
-  height: 244px;
+  flex-direction: row-reverse;
+  width: 60%;
   position: relative;
   left: 30%;
   border-radius: 5%;
 }
 
-.middle-align-column-1{
-  position: absolute;
+.middle-align-column{
+ 
   vertical-align: middle;
   display: grid;
   grid-template-columns: max-content;
@@ -449,44 +446,11 @@ figcaption{
   font-size: small;
   justify-content: center;
   width: 400px ;
-  top: 110%;
-  left: 19%;
   padding: 2rem;
-}
-
-.middle-align-column-2{
-  position: absolute;
-  vertical-align: middle;
-  display: grid;
-  grid-template-columns: max-content;
-  text-align: left;
-  font-size: small;
-  justify-content: center;
-  width: 400px ;
-  top: -4%;
-  left: 32%;
-  padding: 2rem;
-
-
-}
-
-.middle-align-column-3{
-  position: absolute;
-  vertical-align: middle;
-  display: grid;
-  grid-template-columns: max-content;
-  text-align: left;
-  font-size: small;
-  justify-content: center;
-  width: 400px ;
-  top: 175%;
-  left: 21%;
-  padding: 2rem;
-
 }
 
 .contact{
-position: absolute;
+  margin: auto 20px;
 width: 100px ;
 }
 .contact :hover{
