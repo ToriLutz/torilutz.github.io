@@ -1,8 +1,8 @@
 :root {
   --primary-color: #192328;
-  --secondary-color: hsl(195, 70%, 30%);
-  --accent-color-1: hsl(18, 80%, 82%);
-  --accent-color-2: hsla(180, 22%, 85%, 0.813);
+  --secondary-color: rgb(21, 79, 98);
+  --accent-color-1: rgb(246, 194, 172);
+  --accent-color-2: rgba(208, 225, 225, 0.812);
 
 }
 
