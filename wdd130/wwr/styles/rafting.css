@@ -121,6 +121,11 @@ nav ul {
   border: 2px solid var(--primary-color);
 }
 
+.history-img{
+  width: 500px;
+  height: auto;
+}
+
 .history-words {
   display: flex;
   align-items: center;
