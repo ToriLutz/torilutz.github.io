@@ -83,15 +83,15 @@ nav ul {
 
 .index-words {
   position: absolute;
-  top: 50%;
+  top: 67%;
   left: 63%;
   background-color: var(--accent-color-1);
   padding: 10px;
   margin: 10px;
   text-align: center;
   width: 529px;
-  height: 333px;
-  font-size: 5rem;
+  height: 202px;
+  font-size: larger;
 }
 
 .index-welcome-img{
