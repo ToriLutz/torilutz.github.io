@@ -1,6 +1,7 @@
 :root{
     --primary-color: #31473A;
     --secondary-color: #EDF4F2;
+    --accent-color: #68a94d;
 }
 
 .head-font{
@@ -17,4 +18,51 @@
  font-weight: 200;
  font-style: normal;
  color: var(--primary-color);
+  }
+
+header{
+    text-align: center;
+    background-color: var(--accent-color) ;
+    margin: 1rem auto;
+    padding: 1rem 1rem 0.25rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    grid-column: 1/4;
+  }
+
+  .navigation{
+    
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+    height: 25px;
+    width: 96%;
+  }
+
+  .navigation ul{
+    margin: 1 1 auto 0;
+
+  }
+
+  .navigation :hover{
+    color: red;
+  }
+  
+  .card{
+    text-align: center;
+    border: #31473A 2px solid;
+    border-radius: 5%;
+  }
+
+  .card-header{
+    background-color: #68a94d;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50% ;
+    border: #68a94d 2px solid;
+    padding: 25px;
   }
