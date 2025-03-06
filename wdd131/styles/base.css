@@ -1,0 +1,20 @@
+:root{
+    --primary-color: #31473A;
+    --secondary-color: #EDF4F2;
+}
+
+.head-font{
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary-color);
+}
+
+
+.body-font {
+ font-family: "Roboto", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 200;
+ font-style: normal;
+ color: var(--primary-color);
+  }
