@@ -1,5 +1,5 @@
-const currentDate = new Date();
-const currentYear = new Date().getFullYear;
+
+const currentYear = new Date().getFullYear();
 let year = document.getElementById("currentYear");
 year.innerHTML = currentYear;
 const modifiedYear = document.lastModified;
