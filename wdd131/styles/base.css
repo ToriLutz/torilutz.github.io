@@ -43,7 +43,7 @@ header{
   }
 
   .navigation, .card-navigation ul{
-    margin: 1 1 auto 1;
+    margin: 1rem 1rem auto .5rem;
 
   }
 
