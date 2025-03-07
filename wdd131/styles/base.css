@@ -14,7 +14,6 @@
 
 .body-font {
  font-family: "Roboto", sans-serif;
- font-optical-sizing: auto;
  font-weight: 200;
  font-style: normal;
  color: var(--primary-color);
@@ -45,7 +44,7 @@ header{
   }
 
   .navigation, .card-navigation ul{
-    margin: 1 1 auto 0;
+    margin: 1 1 auto 1;
 
   }
 
