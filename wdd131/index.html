@@ -7,6 +7,7 @@
     <meta description="an index page about Victoria Lutz and WDD 131 – Dynamic Web Fundamentals">
     <meta author="Victoria Lutz">
     <link rel="stylesheet" href="../wdd131/styles/base.css">
+    <script src="wdd131/scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -21,6 +22,7 @@
      </ul>
     </header>
     <main>
+     <div class = "container">
        <section class="card">
           <h2 class="head-font card-header" >About Me!</h2>
           <p class="body-font">My name is Victoria Lutz, I am a visually impared martial artist and 
@@ -28,9 +30,9 @@
             for 24 years.
             I am currently working as a Veterinary Technician Assistant and love animals!
           </p>
-          <img src="../wdd131/images/profile.jpg" alt="A photo or a brunette woman smiling, that's me">
-          <h2 class="body-font">Utah</h2>
-          <img src="../wdd131/images/Flag_of_Utah.png" alt="a flag with a red ground white mountains and blue sky, it has a beehive emblem in the middle.">
+          <img class="card-img" src="../wdd131/images/profile.jpg" alt="A photo or a brunette woman smiling, that's me">
+          <h2 class="head-font">Utah</h2>
+          <img class="card-img" src="../wdd131/images/Flag_of_Utah.png" alt="a flag with a red ground white mountains and blue sky, it has a beehive emblem in the middle.">
           <p class="body-font">Utah is a beautiful state with many things,
             it's great for hiking, beautiful architecture,
             and much more!</p>
@@ -48,9 +50,10 @@
             <li><a class="body-font" href="https://placehold.co">Image Placeholder</a></li>
         </ul>
        </section>
+     </div>   
     </main>
     <footer>
-       <p>&copy; Victoria Lutz | Utah</p><span id="currentyear"></span>
+       <p>&copy; <span id="currentyear"></span>Victoria Lutz | Utah</p>
        <p id="lastModified"></p>
     </footer>
     

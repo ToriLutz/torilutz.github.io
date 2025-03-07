@@ -44,25 +44,43 @@ header{
     width: 96%;
   }
 
-  .navigation ul{
+  .navigation, .card-navigation ul{
     margin: 1 1 auto 0;
 
   }
 
-  .navigation :hover{
+  .navigation :hover, .card-navigation :hover{
     color: red;
+  }
+
+.card-navigation{
+    font-size: x-large;
+    text-decoration: none;
+}
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   
   .card{
     text-align: center;
     border: #31473A 2px solid;
-    border-radius: 5%;
+    width: 1000px;
+  }
+  .card-img{
+    width: 200px;
+    height: auto;
   }
 
-  .card-header{
+  h2{
     background-color: #68a94d;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50% ;
-    border: #68a94d 2px solid;
     padding: 25px;
   }
+
+footer{
+    background-color: #68a94d;
+    text-align: center;
+    padding: 50px;
+}
