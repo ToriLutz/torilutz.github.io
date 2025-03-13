@@ -69,6 +69,8 @@ figure :hover{
 
 figcaption {
     font-size: smaller;
+    text-align: center;
+    width: 200px;
 }
 
 footer{
