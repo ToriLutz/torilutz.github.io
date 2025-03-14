@@ -74,7 +74,7 @@ nav a:hover{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #EDF4F2;
+    background-color: var(--primary-color);
 }
 
 main { 
@@ -118,6 +118,8 @@ footer{
 @media(max-width:768px){
     .hamburger{
         display: block;
+        position: fixed;
+        top: 100px;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -133,7 +135,7 @@ footer{
     
     .nav-menu{
         position: fixed;
-        left: -100%;
+        left: -125%;
         top: 70px;
         gap: 0;
         flex-direction: column;
