@@ -30,6 +30,15 @@ header, main{
     margin: 0 auto;
 }
 
+#menu {
+    display: block;
+
+}
+
+#menu ::before{
+    content: icon;
+}
+
 nav{
     background-color: #EDF4F2;
 }
