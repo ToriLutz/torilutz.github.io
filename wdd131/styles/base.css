@@ -17,7 +17,8 @@
  font-weight: 200;
  font-style: normal;
  color: var(--primary-color);
-  }
+}
+
 
 header{
     text-align: center;
@@ -27,9 +28,9 @@ header{
     grid-template-columns: 1fr;
     align-items: end;
     grid-column: 1/4;
-  }
+}
 
-  .navigation{
+.navigation{
     
     background-color: var(--secondary-color);
     display: flex;
@@ -40,16 +41,16 @@ header{
     justify-content: space-around;
     height: 25px;
     width: 96%;
-  }
+}
 
-  .navigation, .card-navigation ul{
+.navigation, .card-navigation ul{
     margin: 1rem 1rem auto .5rem;
 
-  }
+}
 
-  .navigation :hover, .card-navigation :hover{
+.navigation :hover, .card-navigation :hover{
     color: red;
-  }
+}
 
 .card-navigation{
     font-size: x-large;
@@ -59,6 +60,7 @@ header{
 main{
   width: 100%
 }
+
 .container{
   display: flex;
   flex-direction: row;
