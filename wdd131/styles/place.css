@@ -35,3 +35,34 @@ picture{
 padding-top: 20px;
 object-fit: cover;
 }
+
+#weather_info {
+    display: none;
+    text-align: center;
+}
+
+#weather_icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+#date {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
