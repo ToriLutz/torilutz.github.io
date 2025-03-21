@@ -6,11 +6,16 @@
 
 }
 
+.place-holder::after{
+    content: "placeholder";
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2px;
+}
 
 
 .body-font {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
@@ -18,7 +23,6 @@
 
 .head-font {
     font-family: "Playwrite GB S", cursive;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
