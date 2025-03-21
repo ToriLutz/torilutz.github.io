@@ -8,4 +8,13 @@ if (temp == 10 && wSpeed > 4.8){
     document.getElementById("windChill").innerHTML = windChill
   } else {
     document.getElementById("windChill").innerHTML = "N/A";
-  }
+}
+
+
+
+
+const currentYear = new Date().getFullYear();
+let year = document.getElementById("currentYear");
+year.innerHTML = currentYear;
+const modifiedYear = document.lastModified;
+document.getElementById('lastModified').innerText = modifiedYear;
