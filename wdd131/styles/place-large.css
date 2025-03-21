@@ -1,0 +1,31 @@
+@media(min-width: 750px){
+    picture{
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .top{
+        text-align: left;
+        width: 150px;
+    }
+
+    #data{
+        position: relative;
+        width: 300px;
+        top: 50px;
+        left: 200px;
+    }
+
+    #weather_info{
+        position: relative;
+        width: 300px;
+        top: 200px;
+        left: 1100px;
+    }
+
+    footer{
+        position: relative;
+        top: 245px;
+    }
+}

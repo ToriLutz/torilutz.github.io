@@ -15,27 +15,31 @@
 
 </head>
 <body>
-
     <header>
         <h1 class="head-font">The United Kingdom</h1>
     </header>
     <main>
-       <div class="cotainer-small">
-        <picture>
-            <source media="(min-width: 650px)" srcset="./images/uk.webp">
-            <img src="./images/uk_small.webp" alt="a photo of a small photo of a village">
-        </picture>
-        <section>
-            
-        </section>
-        <section id="weather_info">
-            <p id="date"></p>
-            <img id="weather_icon" src="">
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="wind-speed"></p>
-            <p id="wind-chill"></p>
-        </section>
+       <div class="cotainer">
+            <picture>
+                <source media="(min-width: 650px)" srcset="./images/uk.webp">
+                <img src="./images/uk_small.webp" alt="a photo of a small photo of a village">
+            </picture>
+            <div id = "data">
+                <h2 class="head-font top">Data</h2>
+                <p class="body-font">label: data</p>
+                <p class="body-font">label: data</p>
+                <p class="body-font">label: data</p>
+                <p class="body-font">label: data</p>
+            </div>
+            <div id = "weather_info">
+                <h2 class="head-font top">Weather</h2>
+                <img class="icon" src="./images/sun_cloud_icon.svg" alt="a sun covered by a cloud">
+                <p class="body-font">today</p>
+                <p class="body-font">Temperature: 10&deg;C</p>
+                <p class="body-font">Partly Cloudy</p>
+                <p class="body-font">Wind: 5KM/H</p>
+                <p class="body-font"> Wind Chill: <span id="windChill"></span>&deg;C</p>
+            </div>
        </div> 
        
 

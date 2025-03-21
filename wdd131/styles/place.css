@@ -1,7 +1,7 @@
 :root{
-    --primary-color: #00247d;
+    --primary-color: #011c60;
     --secondary-color: #fff;
-    --accent-primary-color: #CF142B;
+    --accent-primary-color: #ff001e;
     --accent-secondary-color: #000000;
 
 }
@@ -25,7 +25,7 @@
 
 header{
     color: #fff;
-    background-color: #00247d;
+    background-color: var(--primary-color);
     text-align: center;
     padding: 2rem;
 
@@ -36,33 +36,33 @@ padding-top: 20px;
 object-fit: cover;
 }
 
-#weather_info {
-    display: none;
+.icon{
+    width: 50px;
+    height: auto;
+}
+
+#data, #weather_info{
     text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent-secondary-color);
+    border: 1px solid var(--accent-secondary-color);
+    margin: 1rem;
 }
 
-#weather_icon {
-    width: 100px;
-    height: 100px;
+.top{
+    background-color: var(--accent-primary-color);
+    color: var(--secondary-color);
 }
 
-#temperature {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 8px 0;
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 50px;
+    color: #fff;
 }
 
-#description {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-#wind-speed {
-    font-size: 16px;
-    color: rgb(255, 0, 0);
-}
-
-#date {
-    font-size: 14px;
-    color: rgb(255, 0, 0);
+#lastModified{
+  color: var(--accent-primary-color);
+  font-size: x-large;
+  font-weight: 700;
 }
