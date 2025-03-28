@@ -1,0 +1,152 @@
+:root{
+    --primary-color: #31473A;
+    --secondary-color: #EDF4F2;
+    --accent-color: #68a94d;
+}
+
+.head-font{
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary-color);
+}
+
+
+.body-font {
+ font-family: "Roboto", sans-serif;
+ font-weight: 200;
+ font-style: normal;
+ color: var(--primary-color);
+}
+
+header{
+background-color: #68a94d;
+display: grid;
+padding: 20px;
+border: 1px solid var(--primary-color);
+}
+
+header, main{
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #EDF4F2;
+}
+
+li{
+    list-style: none;
+}
+
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.navigation{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primary-color);
+}
+
+main { 
+    max-width: 100%;
+    background-color: #EDF4F2;
+}
+
+figure :hover{
+    box-shadow: 0 0 50px var(--primary-color);
+}
+
+img{
+    width: 300px;
+    height: auto;
+    margin: 1rem;  
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+    width: 200px;
+}
+
+footer{
+    background-color: #68a94d;
+    text-align: center;
+    padding: 50px;
+}
+
+#lastModified{
+  color: #EDF4F2;
+  font-size: x-large;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        position: fixed;
+        top: 100px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: fixed;
+        left: -125%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #68a94d;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+}
