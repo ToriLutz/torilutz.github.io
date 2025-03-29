@@ -1,0 +1,73 @@
+:root{
+    --primary-color: #F7B2B7;
+    --secondary-color: #201101;
+    --accent-primary-color: #FF6F91;
+    --accent-secondary-color: #6A82FB;
+
+}
+
+.head-font{
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--accent-secondary-color);
+}
+  
+  
+.body-font {
+   font-family: "Roboto", sans-serif;
+   font-weight: 200;
+   font-style: normal;
+   color: var(--secondary-color);
+}
+
+body{
+    background-color: aliceblue;
+    
+
+}
+
+.productHolder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: #F7B2B7;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    min-height: 370px;
+    border-radius: 1rem;
+    border: var(--accent-secondary-color) 1px;
+    margin: 1.5rem;
+    transition: 0.3s;
+
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.cardText *{
+    margin: 0.5rem;
+}
+
+.categoryText{
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.priceText{
+    font-size: large;
+
+}
+
+.offerText{
+    font-size: small;
+}
