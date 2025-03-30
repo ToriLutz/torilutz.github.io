@@ -1,17 +1,9 @@
 const products = document.querySelector(".productHolder");
-
-function makeCard([img, product, categoryText, rating, price, offer]){
-    let code = `
-      <div class="card">
-                <img src="${img}" alt="a${product}" loading="lazy">
-                <div class="cardText">
-                    <p class="categoryText">${categoryText}</p>
-                    <h5>${rating}</h5>
-                    <p class="priceText">${price}</p>
-                    <p class="offerText">${offer}</p>
-                </div>
-    `;
-    products.innerHTML += code;
+function toggle(){
+    const toggle = document.querySelector('.toggle')
+    const banner = document.querySelector('.banner')
+    toggle.classList.toggle('active')
+    banner.classList.toggle('active')
 }
 
 const cards = [
@@ -56,22 +48,31 @@ function clearContainer(){
 function displayCard(cardsArray){
     const display = document.querySelector(".productHolder");
     cardsArray.array.forEach((card) => {
-        display.appendChild(makeCard([img, product, categoryText, rating, price, offer]));
+        display.appendChild(makeCard(card));
     });
 }
 
 function initialCardDisplay(){
     clearContainer();
-    displayCard(cards);
+    displayCard(cardsArray);
 }
 
-/*
 function createCard(card){
     let img = document.createElement(`img`);
-    let product = document.createElement(`p`);
+    let piece = document.createElement(`p`);
     let categoryText = document.createElement(`h5`);
     let rating = document.createElement (`p`);
     let price = document.createElement(`p`);
     let offer = document.createElement(`p`);
+
+    card.appendChild(img);
+    card.appendChild(piece)
+    card.appendChild(categoryText)
+    card.appendChild(rating)
+    card.appendChild(price)
+    card.appendChild(offer)
+
+    return card;
 }
-*/
+
+initialCardDisplay();

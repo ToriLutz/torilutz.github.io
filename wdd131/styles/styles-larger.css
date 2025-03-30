@@ -1,0 +1,67 @@
+@media (max-width: 900px){
+    header{
+        padding: 20px 40px;
+    }
+    .banner{
+        padding: 0 40px;
+        overflow: hidden;
+    }
+
+    .banner::before{
+        top: -20px;
+        left: -20%;
+        height: 300px;
+        width: 300px;
+    }
+
+    .banner::after{
+        bottom: 0;
+        height: 15px;
+        width: 100%;
+    }
+
+    .content{
+        display: flex;
+        flex-direction:column-reverse ;
+        margin: 10px 30px;
+    }
+
+    .content .contentBox .container{
+        margin-top: 5px;
+        max-width: 100%;
+
+    }
+
+    .content .imgBox img {
+        max-width: 90;
+        min-height: 100px;
+        transform: scale(0.9);
+    }
+    
+    .container .content .contentBox{
+        text-align: center;
+        font-size: 0.6rem;
+      
+    }
+
+    .container{
+        padding: 30px 60px;
+        margin-left: 60px;
+        max-width: 100px;
+    
+    }
+    .content .contentBox h2{
+        font-size: 2rem;
+        padding: 0 60px;
+    }
+
+    .content .contentBox .title {
+        font-size: 3rem;
+        padding: 30px 60px;
+    }
+
+    .container .contentBox a{
+        padding: 100px 0;
+        margin-left: 30px;
+    }
+}
