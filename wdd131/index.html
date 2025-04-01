@@ -3,58 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals - Victoria Lutz</title>
-    <meta name = 'description' content ="an index page about Victoria Lutz and WDD 131 – Dynamic Web Fundamentals">
-    <meta name="author" content="Victoria Lutz">
-    <link rel="stylesheet" href="./styles/base.css">
-    <script src="./scripts/getdates.js" defer></script>
+    <title>TriggerHappyGamer Home Page</title>
+    <meta name = "author" content="Victoria Lutz">
+    <meta name="description" content="A landing page welcoming you to see the things that Victoria Lutz, AKA TriggerHappyGamer has to offer for art and gaming content">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-larger.css">
+    <script src="./scripts/scripts.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-     <h1 class="head-font">WDD 131 – Dynamic Web Fundamentals - Victoria Lutz</h1>
-     <ul class ="navigation">
-        <li><a class="body-font" href="https://www.linkedin.com/in/victoria-lutz-775852314/">Linked In</a></li>
-        <li><a class="body-font" href="https://byupw.instructure.com/">Canvas</a></li>
-        <li><a class="body-font" href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng&id=p7-p13#p7">Scriptures</a></li>
-        <li><a class="body-font" href="#">Final Projects</a></li>
-     </ul>
-    </header>
-    <main>
-     <div class = "container">
-       <section class="card">
-          <h2 class="head-font card-header" >About Me!</h2>
-          <p class="body-font">My name is Victoria Lutz, I am a visually impaired martial artist and 
-            artist in general. I was born and raised in WoodsCross Utah and have stayed here 
-            for 24 years.
-            I am currently working as a Veterinary Technician Assistant and love animals!
-          </p>
-          <img class="card-img" src="./images/profile.jpg" alt="A photo or a brunette woman smiling, that's me">
-          <h2 class="head-font">Utah</h2>
-          <img class="card-img" src="./images/Flag_of_Utah.png" alt="a flag with a red ground white mountains and blue sky, it has a beehive emblem in the middle.">
-          <p class="body-font">Utah is a beautiful state with many things,
-            it's great for hiking, beautiful architecture,
-            and much more!</p>
-       </section>
-
-       <section class="card">
-        <h2 class="head-font card-header">Web Dev Resources</h2>
-        <ul class="card-navigation">
-            <li><a class="body-font" href="https://dev.to">Dev.to Community</a></li>
-            <li><a class="body-font" href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
-            <li><a class="body-font" href="https://css-tricks.com">CSS Tricks</a></li>
-            <li><a class="body-font" href="https://www.w3schools.com">W3 Schools</a></li>
-            <li><a class="body-font" href="https://www.udemy.com/?srsltid=AfmBOoqe-NXQBBSPJhPYFb55BM74JXMWiRD03Ob6ORbDfaz8920E23PJ">Udemy</a></li>
-            <li><a class="body-font" href="https://placehold.co">Image Placeholder</a></li>
-        </ul>
-       </section>
-     </div>   
-    </main>
-    <footer>
-       <p class="body-font">&copy; <span id="currentYear"></span> Victoria Lutz | Utah</p>
-       <p id="lastModified"></p>
-    </footer>
-    
+    <section class="banner">
+       <header>
+        <a href="#" class="logo">THG</a>
+        <div class="toggle" onClick="toggle();"></div>
+       </header>
+       <div class="content">
+            <div class="contentBox">
+                <h2 class="head-font">I'm an artist!</h2>
+                <h1 class="title head-font">Tori</h1>
+                <p class="body-font container">Are you ready to immerse yourself in the vibrant
+                     universe of TriggerHappyGamer? 
+                     This multi-talented creator seamlessly blends her passion for gaming with
+                      a flair for artistic expression and a keen interest in game development</p>
+                <a href="#">Contact Me</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/hero-image.jpg" alt="a parody poster of the movie Jaws where the shark is coming out of the bathtub">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Prints</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <li><a href="#">Watch My Content</a></li>
+            </ul>
+       </div>
+    </section>
 </body>
 </html>
