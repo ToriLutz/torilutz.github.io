@@ -60,8 +60,7 @@
         padding: 30px 60px;
     }
 
-    .container .contentBox a{
+    .container .contentBox a::before{
         padding: 100px 0;
-        margin-left: 30px;
     }
 }

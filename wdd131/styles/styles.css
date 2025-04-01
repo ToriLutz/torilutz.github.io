@@ -232,6 +232,10 @@ header .toggle.active{
     min-width: 400px;
 }
 
+.outline{
+    padding: 10px;
+    background-color: aliceblue;
+}
 
 .banner.active .sci{
     transform: scale(0);
