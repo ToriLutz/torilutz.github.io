@@ -60,7 +60,7 @@ body{
     #FF6F91 100%);
     filter: blur(30px);
     z-index: 1;
-    transition: 1;
+    transition: 1s;
 }
 
 .banner.active::before{
@@ -77,7 +77,7 @@ body{
     height: 25px;
     width: 50%;
     background: var(--accent-secondary-color);
-    filter: blur();
+    filter: blur(10px);
     z-index: 1;
     transition: 1s;
 }
@@ -237,6 +237,10 @@ header .toggle.active{
     background-color: aliceblue;
 }
 
+/* sci was something that i ended up
+ removing but for some reason if i
+ remove .sci the whole hamburger menu blows up  so for now this stays*/
+ 
 .banner.active .sci{
     transform: scale(0);
     transform-origin: left;
@@ -253,7 +257,7 @@ header .toggle.active{
     align-items: center;
     flex-direction: column;
     z-index: 2;
-    transition: 0.5;
+    transition: 0.5s;
     transition-delay: 0s;
     transform: scale(0);
     visibility: hidden;
@@ -282,51 +286,3 @@ header .toggle.active{
 .menu li a:hover{
     color: var(--accent-secondary-color);
 }
-
-/* 
-.productHolder{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card{
-    background-color: #F7B2B7;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    max-width: 300px;
-    text-align: center;
-    min-height: 370px;
-    border-radius: 1rem;
-    border: var(--accent-secondary-color) 1px;
-    margin: 1.5rem;
-    transition: 0.3s;
-
-
-    &:hover{
-        transform: scale(1.1);
-    }
-}
-
-.cardText *{
-    margin: 0.5rem;
-}
-
-.categoryText{
-    font-weight: 400;
-    opacity: 0.7;
-}
-
-.priceText{
-    font-size: large;
-
-}
-
-.offerText{
-    font-size: small;
-}
-
- */
