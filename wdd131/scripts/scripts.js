@@ -57,12 +57,13 @@ function makeProductCard(products) {
         image.setAttribute("src", product.image);
         image.setAttribute("alt", `${product.description}`);
         image.setAttribute("loading", "lazy");
-        description.textContent = (`${product.description}`);
-        categoryText.textContent = (`${product.categoryText}`);
-        rating.textContent = (`${product.rating}`);
-        price.textContent =(`${product.price}`);
+        description.textContent = `${product.description}`;
+        categoryText.textContent = `${product.categoryText}`;
+        rating.textContent = `${product.rating}`;
+        price.textContent =`$${product.price}`;
 
         container.appendChild(image);
+        container.appendChild(description);
         container.appendChild(categoryText);
         container.appendChild(rating);
         container.appendChild(price);
@@ -75,4 +76,6 @@ function makeProductCard(products) {
 
 
 
-makeProductCard(products);
+document.addEventListener("DOMContentLoaded", () => {
+    makeProductCard(products);
+});
