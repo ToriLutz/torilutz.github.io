@@ -286,3 +286,15 @@ header .toggle.active{
 .menu li a:hover{
     color: var(--accent-secondary-color);
 }
+
+/* this is the cards for the shop */
+
+#cardContainer img{
+    max-width: 300px;
+}
+
+#cardContainer{
+    display: flex;
+    justify-items: auto;
+    align-items: center;
+}
