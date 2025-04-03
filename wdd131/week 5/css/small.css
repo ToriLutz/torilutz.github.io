@@ -49,6 +49,71 @@ main {
     min-height: 20rem;
 }
 
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: solid 1px lightblue;
+    border-radius: 6px;
+    padding: .5rem 2%;
+
+}
+
+.wf1 legend{
+    color: #000;
+    padding: .5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .9rem;
+
+}
+
+.wf1 div{
+    padding-top:  1rem;
+    color: darkblue;
+    font-size: .9rem;
+}
+
+.wf1 input[type = "text"],
+.wf1 input[type = "tel"],
+.wf1 input[type = "url"],
+.wf1 input[type = "email"],
+.wf1 select,
+.wf1 input[type = "number"]
+{
+    display: block;
+    border: solid 1px black;
+    background-color: aqua;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 input[type="radio"]
+.wf1 input[type = "checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type = "submit"]{
+    border:none;
+    background-image: linear-gradient(darkblue, lightblue);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    margin: -1rem 2% 2rem 2%;
+
+}
+
+.wf1 input:required{
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid{
+    border-left: solid 8px green;
+}
+
 
 /*----------- FOOTER --------------*/
 footer {
