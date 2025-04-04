@@ -1,6 +1,6 @@
 
 
-let selectPopulate = document.querySelector('select');
+let selectPopulate = document.querySelector('productSelect');
 
 
 const products = [
@@ -32,19 +32,30 @@ const products = [
 ];
 
 products.forEach((product) => {
-    let o = document.createElement("option");
-    o.text = product.id;
-    o.text = product.name;
-    o.value = product.averagerating;
-    slctDropDown.appendChild(o);
+    let option = document.createElement("option");
+    option.text = product.name;
+    option.value = product.id;
+
+    option.setAttribute('data-rating', product.averagerating);
+    selectPopulate.appendChild("option");
 });
 
-slctDropDown.onchange = function(){
-    result.innerText = slctDropDown.value+"name"+"id"
+selectPopulate.onchange = function(){
+   const selectedOption = selectPopulate.options[selectPopulate.selectedIndex];
+   const selectedRating = selectedOption.getAttribute('data-rating');
+   const selectedId = selectedOption.value;
+   const selectedName = selectedOption.text;
+
+   console.log(`Selected: ${selectedName}, ID: ${selectedId}, Rating: ${selectedRating}`);
 };
+
+selectPopulate();
+
+
 
 let numReviews = parseInt(localStorage.getItem("numReviews-ls")) || 0;
 const reviewDisplay = document.querySelector(".clicks");
+const reviewForm = document.getElementById("reviewForm");
 
 
 reviewDisplay.addEventListener("click", () => {
@@ -61,11 +72,13 @@ function updateDisplay() {
 
 updateDisplay();
 
-reviewDisplay.addEventListener("click", () => {
+reviewDisplay.addEventListener("submit", () => {
     numReviews++; 
-    localStorage.setItem("numReviews-ls", numReviews);
+    const reviewInput = document.getElementById("reviewInput").value;
 })
 
+
+ localStorage.setItem("numReviews-ls");
 updateDisplay();
 
 
