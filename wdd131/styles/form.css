@@ -1,0 +1,121 @@
+:root{
+    --primary-color: #F7B2B7;
+    --secondary-color: #000000;
+    --accent-primary-color: #FF6F91;
+    --accent-secondary-color: #8100d7;
+    --accent-tertiary-color: aliceblue;
+
+}
+
+body{
+    background-color: var(--secondary-color);
+    padding: 0 2%;
+    min-height: 200px;
+}
+
+h1{
+    color: var(--accent-secondary-color);
+    padding-left: 10%;
+}
+
+.wf1 fieldset{
+    margin: 2rem;
+    border: solid 1px var(--accent-secondary-color);
+    border-radius: 6px;
+    padding: 1rem;
+
+}
+
+.wf1 legend{
+    color: aliceblue;
+    padding: .5rem;
+}
+
+.wf1 label{
+    color: var(--accent-tertiary-color);
+    padding: 1rem;
+    
+}
+
+.wf1 input[type = "text"],
+.wf1 input[type = "textarea"],
+.wf1 select,
+.wf1 input[type = "date"]
+{
+    display: block;
+    border: solid 1px black;
+    background-color: var(--primary-color);
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+
+
+.checkbox-group {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    
+}
+
+.checkbox-group label {
+    margin-bottom: 5px; 
+    cursor: pointer; 
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.wf1-label{
+    padding: 1rem;
+    color: var(--accent-primary-color);
+    font-size: 1.5rem;
+}
+
+.radio-group {
+    text-align: center;
+    display: block;
+}    
+.radio-group label {
+    cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+textarea{
+   background-color: #F7B2B7;
+}
+
+.wf1 input[type = "submit"]{
+    
+    border: 1px solid var(--accent-secondary-color);
+    background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    margin: -1rem 2% 2rem 2%;
+}
+
+.wf1 input[type = "submit"]::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    transition: 0.5s;
+}
+
+.wf1 input[type = "submit"]:hover{
+    letter-spacing: 4px;
+    color: var(--accent-tertiary-color);
+}
+

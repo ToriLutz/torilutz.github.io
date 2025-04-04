@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <meta name="author" content="Victoria Lutz">
+    <meta name="description" content="a website to see the form and get content">
+    <link rel="stylesheet" href="./styles/form.css">
+    <script src="./scripts/form.js" defer></script>
+</head>
+<body>
+    <h1>Product Review</h1>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <div class="wf1-label">Product Name</div>
+                <select id="name" name="Product Name">
+                    <div class="select">
+                        <option value="">Please Select</option>
+                    
+
+                    </div>
+                </select>
+                <div class="wf1-label">Overall Rating</div>
+                <div class="radio-group">
+                    <label>&star;</label><input type="Radio" name="rating" id="1star">
+                    <label>&star;&star;</label><input type="Radio" name="rating" id="2star">
+                    <label>&star;&star;&star;</label><input type="Radio" name="rating" id="3star">
+                    <label>&star;&star;&star;&star;</label><input type="Radio" name="rating" id="4star">
+                    <label>&star;&star;&star;&star;&star;</label><input type="Radio" name="rating" id="5star">
+                </div>
+                <div class="wf1-label">Date of Installation</div>
+                <label>Please Select a Date<input type="date" name="completed date" ></label>
+
+            
+            
+                <div class="wf1-label">Useful Features</div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="durability" id="durable" value="yes">Durability</label>
+                    <label><input type="checkbox" name="use" id = "ease" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" name="performance" id="perform"  value="yes">Performance</label>
+                    <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+                </div>
+                <label class="wf1-label">Write a Review 
+                    <textarea name="review" id="review" rows="4" cols="55"></textarea>
+                  </label>
+                <label class="wf1-label">Your Name <input type="text" name="name" id="yourname" placeholder="optional"  optional></label>
+                
+               
+            </fieldset>
+        
+            <input type="submit" id="submit" value="Leave Your Review!"> 
+
+
+
+
+        </form>
+</body>
+</html>

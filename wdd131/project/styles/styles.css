@@ -298,3 +298,49 @@ header .toggle.active{
     justify-items: auto;
     align-items: center;
 }
+
+.wf1 fieldset{
+    margin: 2rem;
+    border: solid 1px var(--accent-secondary-color);
+    border-radius: 6px;
+    padding: 1rem;
+
+}
+
+.wf1 legend{
+    color: aliceblue;
+    padding: .5rem;
+}
+
+.wf1 label{
+    color: var(--accent-tertiary-color);
+    padding: 1rem;
+    
+}
+
+.wf1 input[type = "text"],
+.wf1 input[type = "textarea"],
+.wf1 select
+{
+    display: block;
+    border: solid 1px black;
+    background-color: var(--primary-color);
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 input[type= "radio"],
+.wf1 input[type= "checkbox"]{
+    margin-right: 6px ;
+}
+
+.wf1 input[type = "submit"]{
+    border: 1px solid var(--accent-secondary-color);
+    background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    margin: -1rem 2% 2rem 2%;
+}
+
