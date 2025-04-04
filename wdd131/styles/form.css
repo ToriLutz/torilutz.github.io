@@ -67,7 +67,7 @@ h1{
 }
 
 input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and label */
+    margin-right: 10px; 
 }
 
 form{
@@ -87,7 +87,7 @@ form{
     display: block;
 }    
 .radio-group label {
-    cursor: pointer; /* Change cursor to pointer when hovering */
+    cursor: pointer; 
 }
 
 textarea{

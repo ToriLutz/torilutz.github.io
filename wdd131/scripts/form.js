@@ -42,3 +42,30 @@ products.forEach((product) => {
 slctDropDown.onchange = function(){
     result.innerText = slctDropDown.value+"name"+"id"
 };
+
+let numReviews = parseInt(localStorage.getItem("numReviews-ls")) || 0;
+const reviewDisplay = document.querySelector(".clicks");
+
+
+reviewDisplay.addEventListener("click", () => {
+reviewDisplay.textContent = numReviews})
+
+
+function updateDisplay() {
+    if (numReviews !== 0) {
+        reviewDisplay.textContent = numReviews;
+    } else {
+        reviewDisplay.textContent = "You're the FIRST Review!";
+    }
+}
+
+updateDisplay();
+
+reviewDisplay.addEventListener("click", () => {
+    numReviews++; 
+    localStorage.setItem("numReviews-ls", numReviews);
+})
+
+updateDisplay();
+
+
