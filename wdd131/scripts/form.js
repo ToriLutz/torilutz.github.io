@@ -51,35 +51,24 @@ selectPopulate.onchange = function(){
 
 selectPopulate();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const reviewForm = document.getElementById("reviewForm");
+  const reviewInput = document.getElementById("review");
 
-
-let numReviews = parseInt(localStorage.getItem("numReviews-ls")) || 0;
-const reviewDisplay = document.querySelector(".clicks");
-const reviewForm = document.getElementById("reviewForm");
-
-
-reviewDisplay.addEventListener("click", () => {
-reviewDisplay.textContent = numReviews})
-
-
-function updateDisplay() {
-    if (numReviews !== 0) {
-        reviewDisplay.textContent = numReviews;
-    } else {
-        reviewDisplay.textContent = "You're the FIRST Review!";
-    }
-}
-
-updateDisplay();
-
-reviewDisplay.addEventListener("submit", () => {
+  reviewForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    numReviews++; 
-    const reviewInput = document.getElementById("reviewInput").value;
-})
 
+  const reviewText = reviewInput.value.trim(); 
 
-localStorage.setItem("numReviews-ls");
-updateDisplay();
+  if (reviewText) {
+    let numReviews = parseInt(localStorage.getItem('numReviews-ls')) || 0;
+    numReviews++;
+    localStorage.setItem('numReviews-ls', numReviews);
 
-
+    window.location.href = "review.html";
+  }
+  else {
+    alert("please enter a review. ")
+  }
+});
+});
