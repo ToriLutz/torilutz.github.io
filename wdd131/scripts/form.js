@@ -1,6 +1,6 @@
 
 
-let selectPopulate = document.querySelector('productSelect');
+let selectPopulate = document.getElementById('productSelect');
 
 
 const products = [
@@ -37,7 +37,7 @@ products.forEach((product) => {
     option.value = product.id;
 
     option.setAttribute('data-rating', product.averagerating);
-    selectPopulate.appendChild("option");
+    selectPopulate.appendChild(option);
 });
 
 selectPopulate.onchange = function(){
@@ -73,12 +73,13 @@ function updateDisplay() {
 updateDisplay();
 
 reviewDisplay.addEventListener("submit", () => {
+    event.preventDefault();
     numReviews++; 
     const reviewInput = document.getElementById("reviewInput").value;
 })
 
 
- localStorage.setItem("numReviews-ls");
+localStorage.setItem("numReviews-ls");
 updateDisplay();
 
 
