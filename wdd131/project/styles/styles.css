@@ -31,6 +31,7 @@
 
 body{
     overflow: hidden;
+    background-color: var(--secondary-color);
 }
 
 .banner{
@@ -187,10 +188,6 @@ header .toggle.active{
     padding: 10px 0;
 }
 
-.container{
-    text-align: left;
-    max-width: 50%;
-}
 
 .content .contentBox a {
     position: relative;
@@ -287,6 +284,67 @@ header .toggle.active{
     color: var(--accent-secondary-color);
 }
 
+
+/*this is the header for the other pages*/
+
+header{
+    
+    background-color: linear-gradient(var(--accent-primary-color)) ;
+    padding: 1rem 1rem 0.25rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    grid-column: 1/4;
+}
+
+h3{
+    text-align: center;
+}
+
+.navigation{
+    
+    background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+    border: 1px solid var(--accent-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+}
+
+
+
+.navigation :hover, .card-navigation :hover{
+    color: var(--accent-tertiary-color);
+}
+
+/*this is for the SHOP*/
+
+.container{
+
+    text-align: left;
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img, p {
+    position: relative;
+    top: 50px;
+    max-width: 300px;
+    margin: 1rem;
+}
+
+
+
+/* this is the contact.html page */
+
 .wf1 fieldset{
     margin: 2rem;
     border: solid 1px var(--accent-secondary-color);
@@ -319,41 +377,6 @@ header .toggle.active{
     max-width: 400px;
 }
 
-
-header{
-    
-    background-color: linear-gradient(var(--accent-primary-color)) ;
-    padding: 1rem 1rem 0.25rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: end;
-    grid-column: 1/4;
-}
-
-h3{
-    text-align: center;
-}
-
-.navigation{
-    
-    background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 5px;
-    align-items: center;
-    justify-content: space-around;
-    height: 25px;
-    width: 96%;
-}
-
-
-
-.navigation :hover, .card-navigation :hover{
-    color: var(--accent-tertiary-color);
-}
-
-
 .checkbox-group {
     font-size: 1rem;
     display: flex;
@@ -370,10 +393,19 @@ input[type="checkbox"] {
     margin-right: 10px; 
 }
 
+.contact{
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 form{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .wf1-label{
@@ -419,7 +451,3 @@ textarea{
     color: var(--accent-tertiary-color);
 }
 
-
-body {
-    background-color: var(--secondary-color);
-}
