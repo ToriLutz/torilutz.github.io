@@ -6,6 +6,15 @@ function toggle(){
     toggle.classList.toggle('active')
     banner.classList.toggle('active')
 }
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");         
+})
+
 
 //my product shop cards
 const products = [
@@ -37,6 +46,8 @@ const products = [
         rating: "⭐⭐⭐⭐⭐",
         price: 25,
     }
+
+
 ]
 
 
@@ -68,7 +79,7 @@ function makeProductCard(products) {
         container.appendChild(rating);
         container.appendChild(price);
 
-        // i know that it is making the containers for some reason i just can't get it to display
+        // to make sure the cards are properly generating
         console.log ('container', container); 
     // this is supposed to make it display cause return isn't doing anything either
   parentContainer.appendChild(container)
@@ -79,3 +90,45 @@ function makeProductCard(products) {
 document.addEventListener("DOMContentLoaded", () => {
     makeProductCard(products);
 });
+
+//for the contact page 
+let reasonPopulate = document.getElementById('reasonSelect');
+
+if (reasonPopulate){
+
+  const choices = [
+      
+    {
+        reason: "Contacting You For Commission"
+    },
+    {
+      reason: "reporting a site bug"
+    },
+    {
+      reason: "Looking for a refund"
+    },
+    {
+      reason: "I have a video idea!"
+    }
+  ];
+  
+  choices.forEach((choice) => {
+      let option = document.createElement("option");
+      option.text = choice.reason;
+
+      reasonPopulate.appendChild(option);
+  });
+  
+  reasonPopulate.onchange = function(){
+     const selectedOption = reasonPopulate.options[reasonPopulate.selectedIndex];
+     const selectedName = selectedOption.text;
+  
+     console.log(`${selectedName}`);
+  };
+
+
+}
+
+
+
+

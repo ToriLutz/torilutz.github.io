@@ -63,4 +63,81 @@
     .container .contentBox a::before{
         padding: 100px 0;
     }
+
+    .contact{
+        position: absolute;
+        top:20%;
+        left: 10%;
+    }
+
+    .wf1 fieldset{
+        margin: 2rem;
+        border: solid 1px var(--accent-secondary-color);
+        border-radius: 6px;
+        padding: 5rem;
+    
+    }
+    
+    .wf1 fieldset{
+        margin: 1rem;
+        border: solid 1px var(--accent-secondary-color);
+        border-radius: 6px;
+        padding: 3rem;
+    
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    .wf1-label{
+        padding: 1rem;
+        color: var(--accent-primary-color);
+        font-size: 1.5rem;
+    }
+    
+    
+    textarea{
+       background-color: #F7B2B7;
+    }
+    
+    .wf1 input[type = "submit"]{
+        
+        border: 1px solid var(--accent-secondary-color);
+        background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+        border-radius: 6px;
+        width: 96%;
+        margin: 1rem 5% -4rem -4%;
+    }
+    
+    .wf1 input[type = "submit"]::before{
+        position: absolute;
+        content: '';
+        top: 20;
+        left: 0;
+        height: 100%;
+        width: 50%;
+    }
+    
+    .wf1 input[type = "submit"]:hover{
+        letter-spacing: 4px;
+        color: var(--accent-tertiary-color);
+    }
+    
+    
+    
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        left: 30%;
+    }
+
+    .container img, p {
+    position: relative;
+    top: 50px;
+    max-width: 300px;
+    margin: 1rem;
+    }
 }
