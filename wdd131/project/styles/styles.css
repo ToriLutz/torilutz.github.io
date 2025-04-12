@@ -42,32 +42,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:var(--secondary-color);
-}
-
-.banner::before{
-    position: absolute;
-    content: '';
-    top: -90%;
-    left: -30%;
-    height: 1500px;
-    width: 1500px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom,
-    #FF6F91 0%,
-    #F7B2B7 15%
-    transparent 50%,
-    #F7B2B7 85%,
-    #FF6F91 100%);
-    filter: blur(30px);
-    z-index: 1;
-    transition: 1s;
-}
-
-.banner.active::before{
-    width: 50%;
-    height: 50%;
-    background-color: var(--secondary-color);
 }
 
 .banner::after{
@@ -119,23 +93,9 @@ header .logo{
 
 header .toggle {
     position: relative;
-    background: url('../images/menu.png');
     width: 30px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 30px;
-    cursor: pointer;
-}
-
-header .toggle.active{
-    position: relative;
-    background: url('../images/close.png');
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25px;
     cursor: pointer;
 }
 
@@ -166,7 +126,6 @@ header .toggle.active{
     font-weight: 300;
     color: var(--accent-secondary-color);
     line-height: 1em;
-    text-transform: uppercase;
     text-align: left;
 }
 
@@ -185,7 +144,8 @@ header .toggle.active{
     font-weight: 200;
     letter-spacing: 1px;
     color: var(--accent-tertiary-color);
-    padding: 10px 0;
+    position: relative;
+    top: 10px;
 }
 
 
@@ -201,6 +161,7 @@ header .toggle.active{
     transition: 0.5s;
     overflow: hidden;
     background: var(--secondary-color);
+    top: 75px;
 }
 
 .content .contentBox a::before{
@@ -341,6 +302,12 @@ h3{
     margin: 1rem;
 }
 
+.print{
+    position: relative;
+    left: 45%;
+    top:111%;
+    padding-top: 100px;
+}
 
 
 /* this is the contact.html page */
@@ -443,6 +410,25 @@ textarea{
     color: var(--accent-tertiary-color);
 }
 
+.main-hamburger{
+ position: relative;   
+ left: 5300%;
+ cursor: pointer;
+
+}
+
+.main-hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.main-hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.main-hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
 
 .hamburger{
     display: none;
@@ -459,40 +445,4 @@ textarea{
     background-color: var(--primary-color);
 }
 
-@media(max-width:768px){
-    .hamburger{
-        display: block;
-        position: fixed;
-        top: 15px;
-    }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .nav-menu{
-        position: fixed;
-        left: -125%;
-        top: 1%;
-        gap: 0;
-        flex-direction: column;
-   
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-
-    }
-
-    .nav-menu.active{
-        left: 0;
-    }
-
-    
-}

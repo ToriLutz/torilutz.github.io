@@ -36,6 +36,12 @@
         max-width: 90;
         min-height: 100px;
         transform: scale(0.9);
+        padding: 20px;
+        
+        background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+        padding: 10px;
+        background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+
     }
     
     .container .content .contentBox{
@@ -45,7 +51,7 @@
     }
 
     .container{
-        padding: 30px 60px;
+        padding: 0px 60px;
         margin-left: 60px;
         max-width: 100px;
     
@@ -55,13 +61,40 @@
         padding: 0 60px;
     }
 
-    .content .contentBox .title {
-        font-size: 3rem;
-        padding: 30px 60px;
+    .content p{
+        position: relative;
+        left: -50px;
+        top: -10px;
     }
 
-    .container .contentBox a::before{
-        padding: 100px 0;
+    .content .contentBox .title {
+        font-size: 3rem;
+        padding: 15px 60px;
+    }
+
+    .content .contentBox a {
+        position: relative;
+        display: inline-block;
+        border: 1px solid var(--accent-secondary-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--primary-color);
+        padding: 14px 40px;
+        transition: 0.5s;
+        overflow: hidden;
+        background: var(--secondary-color);
+        top: 25px;
+    }
+    
+    .content .contentBox a::before{
+    position: relative;
+    top: -100px;
+    left: 500px;
+    height: 50%;
+    width: 25%;
+    transition: 0.5s;
+    margin: 30px;
     }
 
     .contact{
@@ -126,11 +159,15 @@
         color: var(--accent-tertiary-color);
     }
     
-    
+    .print{
+        position: relative;
+        left: 30%;
+        padding-top: 15px;
+    }
     
     .container{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto ;
         left: 30%;
     }
 
@@ -140,4 +177,47 @@
     max-width: 300px;
     margin: 1rem;
     }
+
+    .hamburger{
+        display: block;
+        position: fixed;
+        top: 15px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: fixed;
+        left: -125%;
+        top: 1%;
+        gap: 0;
+        flex-direction: column;
+   
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .main-hamburger{
+        position: relative;   
+        left: 1500%;
+        cursor: pointer;
+       
+       }
+       
+       
 }

@@ -1,11 +1,14 @@
 
 //hamburger menu
 function toggle(){
-    const toggle = document.querySelector('.toggle')
-    const banner = document.querySelector('.banner')
-    toggle.classList.toggle('active')
-    banner.classList.toggle('active')
+    const toggle = document.querySelector('.toggle');
+    const mainHamburger = document.querySelector(".main-hamburger");
+    const banner = document.querySelector('.banner');
+    toggle.classList.toggle('active');
+    banner.classList.toggle('active');
+    mainHamburger.classList.toggle("active");
 }
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
