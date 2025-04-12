@@ -188,6 +188,7 @@ header .toggle {
     transform: scale(1.3);
     max-width: 70%;
     min-width: 400px;
+    background: -webkit-linear-gradient(var(--accent-primary-color), var(--primary-color));
 }
 
 .outline{
@@ -250,7 +251,7 @@ header .toggle {
 
 header{
     
-    background-color: linear-gradient(var(--accent-primary-color)) ;
+    background: -webkit-linear-gradient(var(--accent-primary-color)) ;
     padding: 1rem 1rem 0.25rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -307,6 +308,11 @@ h3{
     left: 45%;
     top:111%;
     padding-top: 100px;
+}
+
+.container img:hover{
+    filter: brightness(150%);
+
 }
 
 
@@ -398,7 +404,7 @@ textarea{
 .wf1 input[type = "submit"]::before{
     position: absolute;
     content: '';
-    top: 20;
+    top: 20px;
     left: 0;
     height: 100%;
     width: 50%;
@@ -443,6 +449,20 @@ textarea{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--primary-color);
+}
+
+
+
+footer{
+    position: relative;
+    left: 40%;
+    text-align: center;
+    padding: 50px;
+}
+
+#lastModified{
+  color: #EDF4F2;
+  font-size: x-large;
 }
 
 

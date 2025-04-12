@@ -33,14 +33,14 @@
     }
 
     .content .imgBox img {
-        max-width: 90;
+        max-width: 90px;
         min-height: 100px;
         transform: scale(0.9);
         padding: 20px;
         
         background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
         padding: 10px;
-        background-image: linear-gradient(var(--accent-primary-color), var(--primary-color));
+       
 
     }
     
@@ -148,7 +148,7 @@
     .wf1 input[type = "submit"]::before{
         position: absolute;
         content: '';
-        top: 20;
+        top: 20px;
         left: 0;
         height: 100%;
         width: 50%;
@@ -219,5 +219,12 @@
        
        }
        
+    footer{
+        position: relative;
+        left: 15%;
+        top: 622px;
+        text-align: center;
+        padding: 50px;
+    }
        
 }
