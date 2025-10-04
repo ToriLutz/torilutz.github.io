@@ -187,6 +187,7 @@ footer img{
     width: 60vw;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
+    display: none;
 }
 
 #recipe-content{
@@ -202,12 +203,6 @@ footer img{
     text-align: left;
 }
 
-#statusBar {
-    display: flex;
-    justify-content: end;
-    background-color: #38d9a9;
-    height: 2vh;
-}
 
 #close-button{
     cursor: pointer;
