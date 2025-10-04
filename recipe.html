@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %> | Victoria Lutz</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta name="author" content="Victoria Lutz">
+</head>
+<body>
+<header id="top-header">
+    <h1>
+        <span class="siteName">
+            <a href="/" title="Return to home page">Fitness Nutrition</a>
+        </span>
+    </h1>
+    <nav>
+
+                <ul class="navigation body-font nav-menu ">
+            <li><a class="body-font" href = "./index.html">Home</a></li>
+            <li><a class="body-font" href = "#">Recipe Finder</a></li>
+            <li><a class="body-font" href = "./calories.html">Calorie Calculator</a></li>
+            </ul>
+           
+
+            <script src="./scripts/hamburger.js" defer></script>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+               </div>
+</nav>
+</header>
+
+<main id="recipe-box">
+<h1 class="head-font">Recipe Finder</h1>
+<!-- search the api for recipes -->
+<div id = "search-form">
+    <input type="text" id="query" placeholder="Search for recipes...">
+    <button id="search-button" onclick="searchRecipes()">Search!</button>
+</div>
+
+<!-- making the recipe boxes -->
+ <div id="results"></div>
+ <div id="recipe-details">
+    <div id="statusBar">
+        <span>
+           <i id="close-button" onclick="closeRecipeDetails()" class="fas fa-window-close"></i>
+        </span>
+        <!-- the recipe itself -->
+        <div id="recipe-content"></div>
+    </div>
+
+ </div>
+
+</main>
+
+
+
+
+
+
+<script src="/scripts/recipes.js"></script>
+    <footer>
+        <a href="https://www.linkedin.com/in/victoria-lutz-775852314/"><img class = "link-img" src = "./images/linkedin.svg" alt="linkedin logo" loading="lazy"></a>
+        <a href="https://github.com/ToriLutz"><img class = "link-img" src = "./images/github.svg" alt="github logo" loading="lazy"></a>
+        <a href="https://www.youtube.com"><img class = "link-img" src="./images/youtube.svg" alt="youtube logo" loading="lazy"></a>
+        <p class="body-font">&copy; Victoria Lutz | Utah</p>
+    </footer>
+    
+</body>
+</html>

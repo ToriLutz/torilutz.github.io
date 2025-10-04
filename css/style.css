@@ -1,0 +1,220 @@
+:root{
+    --primary-color: #1F2937; 
+    --secondary-color: #22c55e;
+    --tertiary-color: #e0fff9 ;
+    --accent-color: #D71515;
+    --second-accent-color: #38d9a9;
+}
+
+.head-font{
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body-font{
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-hamburger{
+ position: relative;   
+ left: 5300%;
+ cursor: pointer;
+
+}
+
+.main-hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.main-hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.main-hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primary-color);
+}
+
+.navigation{
+    background-color: var(--accent-secondary-color);
+}
+
+
+.navigation{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+
+.navigation :hover, .course-nav :hover, .wdd :hover{
+    color: var(--accent-color);
+    font-weight: bolder;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+header{
+    background-color: var(--second-accent-color);
+    display: flex;
+    padding: 20px;
+    border: 5px solid var(--primary-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+footer{
+    background-color: var(--accent-secondary-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#recipe-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    
+}
+
+#search-form{
+    display: flex;
+    outline: none;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--second-accent-color);
+    border-radius: 35px;
+}
+
+#search-form input{
+    outline: none;
+    width: 30vw;
+    border-radius: 35px;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    font-size: 16px;
+}
+
+#search-button{
+
+    border-radius: 35px;
+    border: 1px solid var(--primary-color);
+    height: 50px;
+    width: 120px;
+    background-image: linear-gradient(180deg, var(--secondary-color), var(--second-accent-color));
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px 0 var(--primary-color);
+}
+
+#results{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-left: 100px;
+
+}
+
+.recipe-item{
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    box-shadow: 0px 5px 15px 0px var(--second-accent-color);
+}
+
+.recipe-item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-item a {
+    color: var(--accent-color);
+}
+
+#recipe-details{
+    display:flex; 
+    flex-direction: column;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60vw;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+#recipe-content{
+    padding: 20px;
+    margin-top: 20px;
+    height: 70vh;
+    overflow-y: auto;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+#recipe-content p, #recipe-content li {
+    text-align: left;
+}
+
+#statusBar {
+    display: flex;
+    justify-content: end;
+    background-color: #38d9a9;
+    height: 2vh;
+}
+
+#close-button{
+    cursor: pointer;
+}
+
+#recipe-content ::-webkit-scrollbar{
+    width: 12px;
+}
+
+#recipe-content ::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+}
+
+
