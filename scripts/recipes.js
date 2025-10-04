@@ -1,4 +1,4 @@
-const apiKey = "17b7719ca9c84c2d8d55941b838c8a13";
+const apiKey = "a1dd3e6aa6cf4722b1021a0ad7f05d7e";
 
 async function searchRecipes() {
     const searchQuery = document.getElementById("query").value;
